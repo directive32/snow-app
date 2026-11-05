@@ -12,6 +12,13 @@
     <Product>Snow App for Windows</Product>
     <Description>Interactive lightweight desktop snowfall and window snow blanket</Description>
     <Version>1.0.0</Version>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildProjectDirectory)=/app</PathMap>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
 </Project>
